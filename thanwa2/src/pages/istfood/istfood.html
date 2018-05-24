@@ -1,0 +1,48 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ADMIN บันทึกข้อมูล</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+   <h3>ข้อมูลผลิตภัณฑ์</h3>
+      <ion-list>
+        <ion-item>
+          <ion-label >ชื่ออาหารภาษาไทย</ion-label>
+          <ion-input ngModel type="text" name="foodnameTh" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label >ชื่ออาหารภาษาอังกฤษ</ion-label>
+          <ion-input ngModel type="text" name="foodnameEn" required></ion-input>        
+        </ion-item>
+        <ion-item>
+          <ion-label >บริษัท</ion-label>
+          <ion-input ngModel type="password" name="company" required></ion-input> 
+        </ion-item>
+        <ion-item>
+            <ion-label >ที่อยู่บริษัท</ion-label>
+            <ion-input ngModel type="password" name="address" required></ion-input> 
+          </ion-item>
+       <ion-item>
+              <ion-label >เลขที่ อย.</ion-label>
+              <ion-input ngModel type="password" name="productNum" required></ion-input> 
+        </ion-item>
+        <ion-item>
+            <ion-label>สถานะผลิตภัณฑ์</ion-label>
+            <ion-select [(ngModel)]="gender">
+              <ion-option value="1">ผ่านการตรวจสอบ</ion-option>
+              <ion-option value="2">ไม่ผ่านการตรวจสอบ</ion-option>
+              <ion-option value="3">อยู่ระหว่างการตรวจสอบ</ion-option>
+            </ion-select>
+          </ion-item>
+        <ion-item>
+              <button ion-button large full>บันทึก</button>
+        </ion-item>
+      </ion-list>
+
+
+</ion-content>
